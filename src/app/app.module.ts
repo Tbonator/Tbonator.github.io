@@ -17,6 +17,7 @@ import { ListComponent } from './list/list.component';
    imports: [
       BrowserModule,
       FormsModule,
+      HttpClientModule,
       AppRoutingModule
 
    ],
