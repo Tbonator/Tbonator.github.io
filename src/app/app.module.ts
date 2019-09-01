@@ -21,4 +21,4 @@ import { ListComponent } from './list/list.component';
       AppComponent
    ]
 })
-export class AppModule { }
+export class AppModule { } 
