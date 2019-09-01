@@ -1,9 +1,11 @@
 <h1>Breweries</h1>
-
-<ul *ngIf="brews">
-  <li *ngFor="let brew of brews">
-    <p class="name">{{ brew.name }}</p>
-    <p class="country">{{ brew.country }}</p>
-    <a class="site" target = "_blank" href="{{ brew.website_url }}">site</a>
-  </li>
-</ul>
+<div class="card"
+  [ng2-loading]="showSpinner">
+  <ul *ngIf="brews">
+      <li *ngFor="let brew of brews">
+        <p class="name">{{ brew.name }}</p>
+        <p class="country">{{ brew.country }}</p>
+        <a class="site" target = "_blank" href="{{ brew.website_url }}">site</a>
+      </li>
+    </ul>
+</div>

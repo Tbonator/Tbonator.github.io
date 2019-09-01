@@ -2,6 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import {HttpClientModule} from '@angular/common/http';
+import { Ng2LoadingSpinnerModule } from 'ng2-loading-spinner'
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -18,7 +19,8 @@ import { ListComponent } from './list/list.component';
       BrowserModule,
       FormsModule,
       HttpClientModule,
-      AppRoutingModule
+      AppRoutingModule,
+      Ng2LoadingSpinnerModule.forRoot({})
 
    ],
    providers: [],
